@@ -1,3 +1,4 @@
+
 import React, { useState } from 'react';
 import { Button } from '@/components/ui/button';
 import { Eye, Lock, UserPlus, Check, Edit, LogOut, UserX } from 'lucide-react';
@@ -103,7 +104,7 @@ const ProfileView: React.FC<ProfileViewProps> = ({ profile, isOwnProfile }) => {
           <div className="flex flex-wrap gap-2 justify-center md:justify-start mb-6">
             {isOwnProfile ? (
               <>
-                <Button as={Link} to="/edit-profile" variant="default" className="gap-2">
+                <Button variant="default" className="gap-2" onClick={() => navigate('/edit-profile')}>
                   <Edit size={16} />
                   Edit Profile
                 </Button>

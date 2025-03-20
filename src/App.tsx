@@ -8,6 +8,7 @@ import Index from "./pages/Index";
 import Profile from "./pages/Profile";
 import EditProfile from "./pages/EditProfile";
 import ViewProfile from "./pages/ViewProfile";
+import SearchPage from "./pages/SearchPage";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -23,6 +24,7 @@ const App = () => (
           <Route path="/profile" element={<Profile />} />
           <Route path="/edit-profile" element={<EditProfile />} />
           <Route path="/view-profile/:id" element={<ViewProfile />} />
+          <Route path="/search" element={<SearchPage />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>

@@ -1,9 +1,10 @@
+
 import React, { useEffect, useState } from 'react';
 import { getCurrentUser, updateProfile, UserProfile } from '@/utils/storage';
 import { useNavigate } from 'react-router-dom';
 import ProfileForm from '@/components/ProfileForm';
 import { Button } from '@/components/ui/button';
-import { ArrowLeft } from 'lucide-react';
+import { ArrowLeft, Search } from 'lucide-react';
 import { toast } from 'sonner';
 
 const EditProfile = () => {
@@ -45,6 +46,15 @@ const EditProfile = () => {
           >
             <ArrowLeft size={16} />
             Back to Profile
+          </Button>
+          
+          <Button 
+            variant="outline" 
+            className="gap-2"
+            onClick={() => navigate('/search')}
+          >
+            <Search size={16} />
+            Search Users
           </Button>
         </div>
         
