@@ -1,11 +1,10 @@
-
 import React, { useEffect, useState } from 'react';
 import { getCurrentUser, updateProfile, UserProfile } from '@/utils/storage';
 import { useNavigate } from 'react-router-dom';
 import ProfileForm from '@/components/ProfileForm';
 import { Button } from '@/components/ui/button';
 import { ArrowLeft } from 'lucide-react';
-import { toast } from '@/components/ui/sonner';
+import { toast } from 'sonner';
 
 const EditProfile = () => {
   const navigate = useNavigate();

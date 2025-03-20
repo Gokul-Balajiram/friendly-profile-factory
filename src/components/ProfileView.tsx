@@ -1,4 +1,3 @@
-
 import React, { useState } from 'react';
 import { Button } from '@/components/ui/button';
 import { Eye, Lock, UserPlus, Check, Edit, LogOut, UserX } from 'lucide-react';
@@ -17,7 +16,7 @@ import {
   AlertDialogTitle,
   AlertDialogTrigger,
 } from "@/components/ui/alert-dialog";
-import { toast } from '@/components/ui/sonner';
+import { toast } from 'sonner';
 
 interface ProfileViewProps {
   profile: UserProfile;

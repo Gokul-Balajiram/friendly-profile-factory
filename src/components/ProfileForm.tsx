@@ -1,4 +1,3 @@
-
 import React, { useState, useRef } from 'react';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
@@ -11,7 +10,7 @@ import { createProfile, UserProfile } from '@/utils/storage';
 import ImageCropper from './ImageCropper';
 import SkillTag from './SkillTag';
 import { useNavigate } from 'react-router-dom';
-import { toast } from '@/components/ui/sonner';
+import { toast } from 'sonner';
 
 interface ProfileFormProps {
   existingProfile?: UserProfile;
